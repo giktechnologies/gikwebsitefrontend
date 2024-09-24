@@ -312,7 +312,7 @@ const Hero = () => {
                   </h1>
                   <p className="text-base !leading-relaxed text-body-color md:text-lg">GIK's mission is to be a world-class ICT company that provides cutting-edge solutions through technological innovations and .</p>
                   <p className="text-base !leading-relaxed text-body-color md:text-lg">GIK aims to push the boundaries of technology, addressing the evolving needs of clients and contributing to the advancement of society as a whole.</p>
-                  <div className="mt-10">
+                  <div className="mt-7">
                     <ButtonLink href="/signup">
                       Get Started
                     </ButtonLink>
