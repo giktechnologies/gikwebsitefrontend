@@ -300,7 +300,7 @@ const Hero = () => {
         className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-2 flex flex-wrap">
             <div className="w-full px-4">
               <div
                 className="wow fadeInUp mx-auto max-w-[1200px] flex items-center justify-between flex-wrap"
@@ -330,10 +330,10 @@ const Hero = () => {
                     src="/images/logo/vecteezy_creative-online-platform-flat-design-graphic_48970820.png"
                     alt="hero image"
                     layout="responsive"
-                    width={160}
-                    height={40}
-                    // width={600}
-                    // height={350}
+                    // width={160}
+                    // height={40}
+                    width={600}
+                    height={350}
                     className="rounded-lg" // Add any additional styles, e.g. rounded corners
                   />
                 </div>
