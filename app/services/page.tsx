@@ -6,7 +6,7 @@ import Services from "@/components/Services";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | Free Next.js Template for Startup and SaaS",
+  title: "Services | Free Next.js Template for Startup and SaaS",
   description: "This is About Page for Startup Nextjs Template",
   // other metadata
 };
@@ -16,7 +16,7 @@ const ServicesPage = () => {
     <>
       <Breadcrumb
         pageName="Services Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description=" Our expertise spans across various domains, enabling us to deliver high-quality solutions to meet the evolving needs of our clients."
       />
       <Services/>
       <AboutSectionTwo />

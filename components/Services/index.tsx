@@ -9,7 +9,7 @@ const Services = () => {
         <div className="container">
           <SectionTitle
             title="Main Services"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="Explore Our Extensive Range of Specialized and Tailored Professional Services for Your Business"
             center
           />
 
