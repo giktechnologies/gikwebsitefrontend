@@ -19,6 +19,7 @@ module.exports = nextConfig;
 // {
 //   "functions": [
 //     {
+
 //       "source": "functions",
 //       "codebase": "default",
 //       "ignore": [
