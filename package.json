@@ -10,7 +10,12 @@
     "deploy": "next build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@types/uuid": "^10.0.0",
+    "bootstrap-icons": "^1.11.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "firebase": "^10.13.2",
@@ -26,7 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
-    "@types/react": "^18.2.33",
+    "@types/react": "^18.3.18",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
