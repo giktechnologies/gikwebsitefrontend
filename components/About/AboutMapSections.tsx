@@ -55,7 +55,7 @@ const LocationMap: React.FC<LocationMapProps> = ({
   }
 }) => {
   return (
-    <section className="py-16 md:py-20 lg:py-28 bg-gray-50">
+    <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Our Location"
@@ -63,12 +63,14 @@ const LocationMap: React.FC<LocationMapProps> = ({
           center
         />
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        {/* Responsive Grid for Map and Contact Information */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Map Container */}
-          <div className="w-full h-[400px] rounded-lg overflow-hidden border-2 border-gray-200">
+          <div className="w-full h-[450px] rounded-lg overflow-hidden border-2 border-gray-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596974663!2d-74.25986548595792!3d40.69714941680757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1656241513650!5m2!1sen!2sus"
-              width="100%"
+             // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596974663!2d-74.25986548595792!3d40.69714941680757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1656241513650!5m2!1sen!2sus"
+             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2052.2308009329713!2d33.77637130487793!3d-13.94486675179639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1736853022893!5m2!1sen!2smw" 
+             width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
@@ -79,13 +81,13 @@ const LocationMap: React.FC<LocationMapProps> = ({
           </div>
 
           {/* Contact Information */}
-          <div className="bg-white p-8 rounded-lg border-2 border-gray-200">
+          <div className="p-8 rounded-lg border border-indigo-500/30 ">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold dark:text-white mb-2">
                   Visit Our Office
                 </h3>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-1 text-lg font-medium text-body-color">
                   <p>{locationInfo.address}</p>
                   <p>{locationInfo.city}</p>
                   <p>{locationInfo.country}</p>
@@ -93,24 +95,24 @@ const LocationMap: React.FC<LocationMapProps> = ({
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold dark:text-white mb-2">
                   Contact Information
                 </h3>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-1 text-gray-600">
                   <p>
-                    <span className="font-medium">Phone: </span>
+                    <span className="text-lg font-medium text-body-color">Phone: </span>
                     <a 
                       href={`tel:${locationInfo.phone}`}
-                      className="hover:text-blue-600 transition-colors"
+                      className="hover:text-blue-600 transition-colors text-lg font-medium text-body-color"
                     >
                       {locationInfo.phone}
                     </a>
                   </p>
                   <p>
-                    <span className="font-medium">Email: </span>
+                    <span className="text-lg font-medium text-body-color ">Email: </span>
                     <a 
                       href={`mailto:${locationInfo.email}`}
-                      className="hover:text-blue-600 transition-colors"
+                      className="hover:text-blue-600 transition-colors text-lg font-medium text-body-color"
                     >
                       {locationInfo.email}
                     </a>
@@ -119,10 +121,10 @@ const LocationMap: React.FC<LocationMapProps> = ({
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold dark:text-white mb-2">
                   Business Hours
                 </h3>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-1 text-lg font-medium text-body-color">
                   <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                   <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
@@ -137,3 +139,4 @@ const LocationMap: React.FC<LocationMapProps> = ({
 };
 
 export default LocationMap;
+

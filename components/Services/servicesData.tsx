@@ -30,20 +30,20 @@ const servicesData: Service[] = [
     paragraph:
       "Specializing in managed and e-commerce hosting, we ensure high performance and security for your websites, with options for WordPress and reseller hosting.",
   },
-  {
-    id: 5,
-    icon: <Image src="/images/services/icons8-computer-networks-100.png" alt="Next.js Icon" width={40} height={40} />,
-    title: "Computer Networks",
-    paragraph:
-      "Our network solutions cover installation, maintenance, and upgrades, ensuring optimal performance and seamless connectivity across your organization.",
-  },
-  {
-    id: 6,
-    icon: <Image src="/images/logo/gikoriginal.png" alt="Custom Icon" width={40} height={40} />,
-    title: "Custom Solutions",
-    paragraph:
-      "Our network solutions cover installation, maintenance, and upgrades, ensuring optimal performance and seamless connectivity across your organization.",
-  },
+  // {
+  //   id: 5,
+  //   icon: <Image src="/images/services/icons8-computer-networks-100.png" alt="Next.js Icon" width={40} height={40} />,
+  //   title: "Computer Networks",
+  //   paragraph:
+  //     "Our network solutions cover installation, maintenance, and upgrades, ensuring optimal performance and seamless connectivity across your organization.",
+  // },
+  // {
+  //   id: 6,
+  //   icon: <Image src="/images/logo/gikoriginal.png" alt="Custom Icon" width={40} height={40} />,
+  //   title: "Custom Solutions",
+  //   paragraph:
+  //     "Our network solutions cover installation, maintenance, and upgrades, ensuring optimal performance and seamless connectivity across your organization.",
+  // },
 ];
 
 export default servicesData;

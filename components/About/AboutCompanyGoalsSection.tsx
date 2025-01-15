@@ -1,18 +1,8 @@
 import React from 'react';
 import { checkIcon } from './AboutSectionOne';
+import SectionTitle from '../Common/SectionTitle';
 
-const SectionTitle = ({ title, paragraph, center }) => {
-  return (
-    <div className={`w-full ${center ? 'text-center' : ''}`}>
-      <h2 className="mb-4 text-3xl font-bold !leading-tight text-black sm:text-4xl md:text-[45px]">
-        {title}
-      </h2>
-      <p className="text-base !leading-relaxed text-gray-600 md:text-lg">
-        {paragraph}
-      </p>
-    </div>
-  );
-};
+
 
 const CompanyGoals = () => {
   const goals = [
@@ -73,7 +63,7 @@ const CompanyGoals = () => {
 
   const GoalCard = ({ type, title, description, icon, points }) => {
     return (
-      <div className="rounded-lg bg-white p-8 shadow-one">
+      <div className="rounded-lg p-8 border border-indigo-500/30">
         <div className="mb-8 flex items-center justify-center">
           {icon}
         </div>

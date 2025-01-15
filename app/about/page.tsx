@@ -23,7 +23,7 @@ const AboutPage = () => {
       <AboutSectionOne />
       <CompanyGoals/>
       <Team/>
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
       <LocationMap locationInfo={undefined}/>
     </>
   );
