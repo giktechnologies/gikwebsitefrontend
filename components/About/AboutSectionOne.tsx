@@ -98,8 +98,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Who We Are"
+                paragraph="Founded in 2025, GIK is a partnership-driven technology company dedicated to innovation that drives developmental, economic, and cultural transformation. We focus on delivering cutting-edge solutions and high-quality products and services to make a lasting impact on society."
                 mb="44px"
               />
               <div

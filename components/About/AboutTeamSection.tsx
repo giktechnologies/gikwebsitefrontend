@@ -130,14 +130,14 @@ import Image from "next/image";
 const teamMembers = [
   {
     id: 1,
-    name: "John Smith",
-    role: "CEO & Founder",
-    image: "images/about/pexels-bymuratisikofficial-30068046.jpg",
+    name: "Gift Banda",
+    role: "Managing Director",
+    image: "images/about/gift_banda.png",
     socials: [
       {
         name: "facebook",
-        url: "https://facebook.com",
-        icon: "/images/about/icons8-facebook-50.png"
+        url: "https://web.facebook.com/bandagiftr?_rdc=1&_rdr#",
+        icon: "images/about/icons8-facebook-50.png"
       },
       {
         name: "twitter",
@@ -146,16 +146,16 @@ const teamMembers = [
       },
       {
         name: "linkedin",
-        url: "https://linkedin.com",
+        url: "https://www.linkedin.com/in/gift-r-banda-2b294222a/",
         icon: "images/about/icons8-linkedin-50.png"
       }
     ]
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    image: "images/about/pexels-linkedin-2182970.jpg",
+    name: "Innocent Kumwenda",
+    role: "Technical Director",
+    image: "images/about/innocent_kumwenda.png",
     socials: [
       {
         name: "twitter",
@@ -171,14 +171,14 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "David Chen",
-    role: "Lead Developer",
-    image: "images/about/pexels-lubomir-satko-14868412-12437056.jpg",
+    name: "This might be you",
+    role: "Explore roles",
+    image: "images/about/new_member.svg",
     socials: [
       {
         name: "linkedin",
         url: "https://linkedin.com",
-        icon: "images/about/icons8-linkedin-50.png"
+        icon: "images/about/icons8-search.gif"
       }
     ]
   }
@@ -186,7 +186,7 @@ const teamMembers = [
 
 const TeamCard = ({ name, role, image, socials }) => {
   return (
-    <div className="relative overflow-hidden rounded-lg bg-white shadow-one">
+    <div className="relative overflow-hidden rounded-lg bg-white wow fadeInUp shadow-two dark:shadow-three dark:hover:shadow-gray-dark rounded-sm bg-white p-3 duration-300 hover:shadow-one dark:bg-dark">
       <div className="relative block h-[340px] w-full">
         <Image
           src={image}
@@ -196,10 +196,11 @@ const TeamCard = ({ name, role, image, socials }) => {
         />
       </div>
       <div className="p-6 text-center">
-        <h3 className="mb-1 text-xl font-bold text-black">{name}</h3>
+        <h3 className="mb-1 text-xl font-bold dark:text-white">{name}</h3>
         <p className="mb-4 text-sm text-gray-600">{role}</p>
         <div className="flex items-center justify-center gap-5">
           {socials.map((social) => (
+            
             <a
               key={social.name}
               href={social.url}
