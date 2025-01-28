@@ -48,10 +48,10 @@ interface LocationMapProps {
 const LocationMap: React.FC<LocationMapProps> = ({ 
   locationInfo = {
     address: "123 Business Street",
-    city: "New York, NY 10001",
+    city: "Area 18, Lilongwe",
     country: "United States",
-    phone: "+1 (555) 123-4567",
-    email: "contact@yourcompany.com"
+    phone: "+265 881 830 444",
+    email: "giktechnologiesincop@gmail.com"
   }
 }) => {
   return (
@@ -125,7 +125,7 @@ const LocationMap: React.FC<LocationMapProps> = ({
                   Business Hours
                 </h3>
                 <div className="space-y-1 text-lg font-medium text-body-color">
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p>Monday - Friday: 8:00 AM - 4:30 PM</p>
                   <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>

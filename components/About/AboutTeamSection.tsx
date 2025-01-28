@@ -158,13 +158,18 @@ const teamMembers = [
     image: "images/about/innocent_kumwenda.png",
     socials: [
       {
-        name: "twitter",
-        url: "https://twitter.com",
+        name: "instagram",
+        url: "https://www.instagram.com/ikay_real/",
+        icon: "images/about/icons8-insta.svg"
+      },
+      {
+        name: "github",
+        url: "https://github.com/Ikay-real",
         icon: "images/about/icons8-github-48.png"
       },
       {
         name: "linkedin",
-        url: "https://linkedin.com",
+        url: "https://www.linkedin.com/in/innocent-kumwenda99",
         icon: "images/about/icons8-linkedin-50.png"
       }
     ]
