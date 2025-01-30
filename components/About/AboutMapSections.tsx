@@ -49,7 +49,7 @@ const LocationMap: React.FC<LocationMapProps> = ({
   locationInfo = {
     address: "123 Business Street",
     city: "Area 18, Lilongwe",
-    country: "United States",
+    country: "Malawi",
     phone: "+265 881 830 444",
     email: "giktechnologiesincop@gmail.com"
   }
