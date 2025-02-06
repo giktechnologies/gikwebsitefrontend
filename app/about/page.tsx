@@ -1,7 +1,6 @@
 import CompanyGoals from "@/components/About/AboutCompanyGoalsSection";
 import LocationMap from "@/components/About/AboutMapSections";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Team from "@/components/About/AboutTeamSection";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
