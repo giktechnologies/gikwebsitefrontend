@@ -5,7 +5,7 @@ const servicesData: Service[] = [
   {
     id: 1,
     icon: <Image src="/images/services/icons8-web-development-100.png" alt="Startup Icon" width={40} height={40} />,
-    title: "Software engineering",
+    title: "Software Development",
     paragraph:
       "We provide expert software engineering, focusing on custom development and cloud optimization to meet evolving business demands.",
   },
@@ -19,17 +19,17 @@ const servicesData: Service[] = [
   {
     id: 3,
     icon: <Image src="/images/services/laptop_2389678.png" alt="Next.js Icon" width={40} height={40} />,
-    title: "ICT Consultancy",
+    title: "Multimedia",
     paragraph:
-      "Our team assists with ICT audits, governance, and compliance, ensuring your organization meets industry standards while achieving its business objectives.",
+      "We create stunning graphics, videos, and animations to enhance digital presence. Our services include web design, motion graphics, and interactive content.",
   },
-  {
-    id: 4,
-    icon: <Image src="/images/services/icons8-hosting-100.png" alt="Custom Icon" width={40} height={40} />,
-    title: "Hosting",
-    paragraph:
-      "Specializing in managed and e-commerce hosting, we ensure high performance and security for your websites, with options for WordPress and reseller hosting.",
-  },
+  // {
+  //   id: 4,
+  //   icon: <Image src="/images/services/icons8-hosting-100.png" alt="Custom Icon" width={40} height={40} />,
+  //   title: "Hosting",
+  //   paragraph:
+  //     "Specializing in managed and e-commerce hosting, we ensure high performance and security for your websites, with options for WordPress and reseller hosting.",
+  // },
   // {
   //   id: 5,
   //   icon: <Image src="/images/services/icons8-computer-networks-100.png" alt="Next.js Icon" width={40} height={40} />,
@@ -43,6 +43,13 @@ const servicesData: Service[] = [
   //   title: "Custom Solutions",
   //   paragraph:
   //     "Our network solutions cover installation, maintenance, and upgrades, ensuring optimal performance and seamless connectivity across your organization.",
+  // },
+  // {
+  //   id: 7,
+  //   icon: <Image src="/images/services/laptop_2389678.png" alt="Next.js Icon" width={40} height={40} />,
+  //   title: "ICT Consultancy",
+  //   paragraph:
+  //     "Our team assists with ICT audits, governance, and compliance, ensuring your organization meets industry standards while achieving its business objectives.",
   // },
 ];
 
