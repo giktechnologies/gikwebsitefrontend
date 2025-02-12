@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 
-const RoleDetailsPage = ({ params }: { params: Params }) => {
+const ServiceDetailsPage = ({ params }: { params: Params }) => {
 
   const jobId = parseInt(params.id, 10);
   const job = jobsData.find(job => job.id === jobId);
