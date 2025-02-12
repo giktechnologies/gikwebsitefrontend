@@ -4,8 +4,9 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { jobsData } from '@/components/Careers/careersData'; // adjust the import path as needed
-import Breadcrumb from '@/components/Common/Breadcrumb';
 
+import RoleDetails from '@/components/Careers/Roles/RoleDetails';
+import Breadcrumb from '@/components/Common/Breadcrumb';
 
 
 type Params = {
@@ -29,7 +30,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-const ServiceDetailsPage = ({ params }: { params: Params }) => {
+
+const RoleDetailsPage = ({ params }: { params: Params }) => {
+
   const jobId = parseInt(params.id, 10);
   const job = jobsData.find(job => job.id === jobId);
 
@@ -40,6 +43,7 @@ const ServiceDetailsPage = ({ params }: { params: Params }) => {
   return (<>
     <Breadcrumb
       pageName="Service Details Page"
+
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
     />
     <RoleDetails job={job} />
@@ -48,3 +52,4 @@ const ServiceDetailsPage = ({ params }: { params: Params }) => {
 };
 
 export default ServiceDetailsPage;
+

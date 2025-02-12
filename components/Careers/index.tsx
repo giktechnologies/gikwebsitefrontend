@@ -64,12 +64,16 @@ const OpenRoleListings = () => {
                                   <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color mt-1">{job.description}</p>
                                 </div>
                                 <div className="mt-4 md:mt-0">
-                                  <a
+                                  {/* <a
                                     href={`/apply/${job.id}`}
                                     className="inline-block px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
                                   >
                                     Apply Now
-                                  </a>
+                                  </a> */}
+
+<a href={`/careers/role/${job.id}`} className="text-blue-500 hover:underline">
+  View Details
+</a>
                                 </div>
                               </div>
                             </CardContent>
