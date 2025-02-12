@@ -4,6 +4,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { jobsData } from '@/components/Careers/careersData'; // adjust the import path as needed
+
 import RoleDetails from '@/components/Careers/Roles/RoleDetails';
 import Breadcrumb from '@/components/Common/Breadcrumb';
 
@@ -29,7 +30,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
+
 const RoleDetailsPage = ({ params }: { params: Params }) => {
+
   const jobId = parseInt(params.id, 10);
   const job = jobsData.find(job => job.id === jobId);
 
@@ -39,7 +42,8 @@ const RoleDetailsPage = ({ params }: { params: Params }) => {
 
   return (<>
     <Breadcrumb
-      pageName="Careers Page"
+      pageName="Service Details Page"
+
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
     />
     <RoleDetails job={job} />
@@ -47,4 +51,5 @@ const RoleDetailsPage = ({ params }: { params: Params }) => {
   );
 };
 
-export default RoleDetailsPage;
+export default ServiceDetailsPage;
+
