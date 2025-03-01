@@ -2,6 +2,8 @@ import { Feature } from "@/types/feature";
 import Link from "next/link";
 
 const SingleService = ({ feature }: { feature: Feature }) => {
+  console.log(feature.id.toString());
+  
   const { icon, title, paragraph } = feature;
   return (
     <div className="w-full">
@@ -15,7 +17,7 @@ const SingleService = ({ feature }: { feature: Feature }) => {
         <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
           {paragraph}
         </p>
-        <Link href="iupoop" className="font-bold mt-2 inline-flex items-center justify-center p-4 text-base font-medium  rounded-md hover:bg-primary hover:bg-opacity-10 text-primary" >
+        <Link href={`services/item/${feature.id.toString()}`} className="font-bold mt-2 inline-flex items-center justify-center p-4 text-base font-medium  rounded-md hover:bg-primary hover:bg-opacity-10 text-primary" >
           Learn more →
         </Link>
       </div>
