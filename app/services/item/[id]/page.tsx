@@ -78,6 +78,7 @@ import servicesData from "@/components/Services/servicesData";
 import ServiceDescription from "@/components/Services/ServicesDetail";
 import ServiceRequestForm from "@/components/Services/ServicesDetail/ServicesRequestForm";
 import SubServicesList from "@/components/Services/ServicesDetail/SubServicesList";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 
