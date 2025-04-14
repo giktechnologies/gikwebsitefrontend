@@ -52,7 +52,7 @@ interface ServiceDescriptionProps {
 
 const ServiceDescription = ({ imageSrc, title, description }: ServiceDescriptionProps) => {
   return (
-<div className="flex flex-col items-center text-center">
+<div className="flex flex-col items-center text-center ">
   <div className="mb-4">
     <Image 
       src={imageSrc} 
@@ -63,7 +63,7 @@ const ServiceDescription = ({ imageSrc, title, description }: ServiceDescription
     />
   </div>
   <h2 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{title}</h2>
-  <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed px-5">
+  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed px-5">
     {description}
   </p>
 </div>

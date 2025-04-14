@@ -24,16 +24,16 @@ const NewsLatterBox = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     if (!name || !email) {
       setErrorMessage('Both name and email are required.');
       return;
     }
-
+  
     setLoading(true);
     setErrorMessage('');
     setSuccessMessage('');
-
+  
     try {
       const response = await fetch('/api/newsletter', {
         method: 'POST',
@@ -42,27 +42,25 @@ const NewsLatterBox = () => {
         },
         body: JSON.stringify({ name, email }),
       });
-
+  
       const data = await response.json();
-
+  
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to subscribe');
+        // Check if the response contains an error message from the backend
+        setErrorMessage(data.error || 'Failed to subscribe.');
+        return;
       }
-
-      // Handle different responses based on the backend response
-      if (data.error) {
-        setErrorMessage(data.error); // Display the specific error message
-      } else {
-        setSuccessMessage(data.message);
-        setName('');
-        setEmail('');
-      }
+  
+      setSuccessMessage(data.message);
+      setName('');
+      setEmail('');
     } catch (error) {
       setErrorMessage('An error occurred. Please try again.');
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div
