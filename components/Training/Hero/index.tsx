@@ -317,9 +317,12 @@ const TrainingHero = () => {
             </h1>
             {/* Updated Paragraph */}
             <p className="mb-6 text-base text-body-color md:text-lg">
-            From fundamentals to advanced deep dives, gain the skills you need to thrive in today’s digital world.
-            Explore a growing catalog of practical courses designed to build real-world capabilities. Among many options, you’ll find standout programs like ICT Basics for essential digital literacy and Data Management & Statistics to unlock the power of data. Whether you're just beginning or leveling up, there's something here for every learner
-            </p>
+  From fundamentals to advanced deep dives, gain the skills you need to thrive in today’s digital world.
+  Explore a growing catalog of practical courses designed to build real-world capabilities.
+  Among many options, you&#39;ll find standout programs like ICT Basics for essential digital literacy and Data Management &amp; Statistics to unlock the power of data.
+  Whether you&#39;re just beginning or leveling up, there&#39;s something here for every learner.
+</p>
+
             {/* Button links kept as is, adjust if needed */}
             <div className="flex flex-col md:flex-row gap-4">
               <ButtonLink href="/signup">Get Started</ButtonLink>
