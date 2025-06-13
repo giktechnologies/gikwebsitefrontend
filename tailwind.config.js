@@ -48,6 +48,7 @@ module.exports = {
         "stroke-dark": "#353943",
         "bg-color-dark": "#171C28",
         "gik-orange":"#dd440f",
+        "dark-higher":"#0a1221",
       },
 
       boxShadow: {

@@ -1,5 +1,4 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
+import Courses from "@/components/Training";
 import TrainingHero from "@/components/Training/Hero";
 
 import { Metadata } from "next";
@@ -14,6 +13,7 @@ const ContactPage = () => {
   return (
     <>
       <TrainingHero />
+       <Courses />
     </>
   );
 };
