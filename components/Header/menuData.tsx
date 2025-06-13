@@ -113,6 +113,12 @@ const menuData: Menu[] = [
       },
     ],
   },
+  {
+    id: 93,
+    title: "Training",
+    path: "/training",
+    newTab: false,
+  },
 ];
 export default menuData;
 
