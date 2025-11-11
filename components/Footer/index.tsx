@@ -30,7 +30,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing eliit.
                   Integer lobortis.
                 </p>
                 <div className="flex items-center">
@@ -200,7 +200,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              © 2025 GIK Technologies. All rights reserved.
+            © 2025 GIK Technologies. All rights reserved.
             </p>
           </div>
         </div>
