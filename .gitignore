@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+#firebase
+gikwebsite-98444-firebase-adminsdk-fbsvc-59cc51d453.json
