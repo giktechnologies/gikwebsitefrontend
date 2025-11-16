@@ -135,6 +135,11 @@ const teamMembers = [
     image: "images/about/gift_banda.png",
     socials: [
       {
+        name: "linkedin",
+        url: "https://www.linkedin.com/in/gift-r-banda-2b294222a/",
+        icon: "images/about/icons8-linkedin-50.png"
+      },
+      {
         name: "facebook",
         url: "https://web.facebook.com/bandagiftr?_rdc=1&_rdr#",
         icon: "images/about/icons8-facebook-50.png"
@@ -143,12 +148,8 @@ const teamMembers = [
         name: "twitter",
         url: "https://twitter.com",
         icon: "/images/about/icons8-github-48.png"
-      },
-      {
-        name: "linkedin",
-        url: "https://www.linkedin.com/in/gift-r-banda-2b294222a/",
-        icon: "images/about/icons8-linkedin-50.png"
       }
+      
     ]
   },
   {
@@ -182,7 +183,7 @@ const teamMembers = [
     socials: [
       {
         name: "linkedin",
-        url: "https://linkedin.com",
+        url: "/careers",
         icon: "images/about/icons8-search.gif"
       }
     ]
@@ -209,7 +210,7 @@ const TeamCard = ({ name, role, image, socials }) => {
             <a
               key={social.name}
               href={social.url}
-              target="_blank"
+              // target="_blank"
               rel="noopener noreferrer"
               className="group"
               aria-label={`Follow on ${social.name}`}
