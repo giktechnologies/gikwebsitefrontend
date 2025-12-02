@@ -109,7 +109,7 @@ const AboutSectionOne = () => {
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Innovation" />
-                    <List text="Creativity" />
+                     <List text="Creativity" />
                     <List text="Excellence" />
                   </div>
 
@@ -118,7 +118,7 @@ const AboutSectionOne = () => {
                     <List text="Ingenuity" />
                     <List text="Development" />
                   </div>
-                </div>
+                </div>  
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2">
